@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body class="text-white">
+  <div class="flex flex-col h-screen justify-center items-center w-full">
+    <div class="flex w-full px-4 pt-12 pb-6 place-content-center flex-col justify-center items-center" id="bg1">
+      <h2>Sunday, September 3rd</h2>
+      <div class="px-2 w-full">
+        <div class="flex">
+          <div class="flex flex-col w-1/6 text-center">
+            <img class="object-center mt-auto mx-auto" src="images/arrowLeft.svg" alt="Previous day"/>
+            <p class="mb-auto">Sept 2</p>
+          </div>
+          <div class="w-4/6 items-center justify-center">
+            <img class="object-center mx-auto" src="images/sun.svg" alt="Sunny"/>
+          </div>
+          <div class="flex flex-col w-1/6 text-center">
+            <img class="object-center mt-auto mx-auto" src="images/arrowRight.svg" alt="Previous day"/>
+            <p class="mb-auto">Sept 4</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="flex flex-row content-end">
+        <h1 class="-mt-8 -mb-4">75°F</h1><p class="-mt-2">/ 24°C</p>
+      </div>
+      <p class="w-3/6 text-center leading-4" id="conditions">Conditions are <strong>sunny</strong> and <strong>warm</strong> with a <strong>light breeze</strong>.</p>
+      <button class="flex flex-row items-center btn mt-4 rounded-full px-6 py-2 gap-2" id="location">
+        <img class="" src="images/location.svg" alt="map"/>
+        <p>Philadelphia, PA</p>
+      </button>
+    </div>
+    <div class="px-4 flex flex-col w-full h-full" id="bg2">
+      <div class="flex flex-row gap-2">
+        <button class="flex flex-row items-center btn rounded-full p-1 px-4 border-2 gap-2 min-w-0" id="btn1">
+          <img class="" src="images/therm.svg" alt="temp"/>
+        </button>
+        <button class="flex flex-row items-center btn rounded-full p-1 px-4 gap-2" id="btn1">
+          <img class="" src="images/umbrella.svg" alt="rain"/>
+        </button>
+        <div class="w-full text-right leading-4 text-white">
+          HI: 83°F <br>
+          LO: 65°F
+        </div>
+      </div>
+      <div class="">
+        <div class="flex flex-row gap-5 overflow-auto whitespace-nowrap">
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">12 AM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>71°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">1 AM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>66°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">2 AM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">3 AM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>70°F</p>
+          </div>
+          <img class="static -mx-3" src="images/line.svg" alt="line"/>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">4 AM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>78°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">5 AM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>82°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">6 AM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>82°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">7 AM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">8 AM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">9 AM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">11 AM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">12 PM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">1 PM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">2 PM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">3 PM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">4 PM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">5 PM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">6 PM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">7 PM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">8 PM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">9 PM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">10 PM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+          <div class="text-center h-full pt-2">
+            <p class="leading-4">11 PM</p>
+            <img class="mt-40" src="images/sunSmall.svg" alt="sun"/>
+            <p>65°F</p>
+          </div>
+        </div>
+        <img class="" src="images/graph.svg" alt="graph" id="image"/>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
